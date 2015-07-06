@@ -2,6 +2,7 @@
 base_packages:
   - git
   - gitk
+  - git-extras
   - vim
 
 dotfiles_repo: 'https://github.com/opdavies/dotfiles3.git'
