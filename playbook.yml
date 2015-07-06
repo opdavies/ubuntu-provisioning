@@ -14,4 +14,4 @@
   roles:
     - { role: base, tags: [ 'base' ] }
     - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
-    - { role: oh-my-zsh, tags: [ 'zsh' ] }
+    - { role: opdavies.oh-my-zsh, tags: [ 'zsh' ] }
