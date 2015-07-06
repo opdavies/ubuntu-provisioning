@@ -14,3 +14,4 @@
   roles:
     - base
     - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
+    - { role: oh-my-zsh, tags: [ 'zsh' ] }
