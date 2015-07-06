@@ -12,6 +12,6 @@
         cache_valid_time: 86400 
 
   roles:
-    - base
+    - { role: base, tags: [ 'base' ] }
     - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
     - { role: oh-my-zsh, tags: [ 'zsh' ] }
