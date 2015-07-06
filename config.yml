@@ -1,4 +1,9 @@
 ---
+base_packages:
+  - git
+  - gitk
+  - vim
+
 dotfiles_repo: 'https://github.com/opdavies/dotfiles3.git'
 dotfiles_repo_local_destination: '~/.dotfiles'
 dotfiles_files:

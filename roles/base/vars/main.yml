@@ -1,5 +1,0 @@
----
-base_packages:
-  - git
-  - gitk
-  - vim
