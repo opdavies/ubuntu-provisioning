@@ -4,3 +4,6 @@ dotfiles_repo_local_destination: '~/.dotfiles'
 dotfiles_files:
   - .gitconfig
   - .gitignore
+
+ohmyzsh_users:
+  - opdavies
