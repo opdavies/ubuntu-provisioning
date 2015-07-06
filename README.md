@@ -6,6 +6,6 @@
 
 ## TODO
 
-* Clone and install dotfiles from GitHub.
+* <s>Clone and install dotfiles from GitHub.</s>
 * Install Sublime Text.
 * Install PhpStorm.
