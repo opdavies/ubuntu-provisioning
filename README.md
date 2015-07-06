@@ -1,5 +1,7 @@
 # ubuntu-provisioning
 
+[Ansible](http://ansible.com/) playbooks for provisioning my Ubuntu laptop.
+
 ## Running
 
 `$ ansible-playbook playbook.yml -K`
