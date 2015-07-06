@@ -12,6 +12,7 @@
         cache_valid_time: 86400 
 
   roles:
-    - { role: base, tags: [ 'base' ] }
+    - { role: base, tags: [ 'base', 'packages' ] }
     - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
-    - { role: opdavies.oh-my-zsh, tags: [ 'zsh' ] }
+    - { role: opdavies.oh-my-zsh, tags: [ 'zsh', 'packages' ] }
+    - { role: opdavies.sculpin, tags: [ 'sculpin', 'packages' ] }
