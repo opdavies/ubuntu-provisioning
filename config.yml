@@ -7,3 +7,4 @@ dotfiles_files:
 
 ohmyzsh_users:
   - opdavies
+ohmyzsh_theme: garyblessington
