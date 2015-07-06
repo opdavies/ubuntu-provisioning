@@ -2,6 +2,9 @@
 - hosts: all
   sudo: yes
 
+  vars_files:
+    - config.yml
+
   pre_tasks:
     - name: Update apt cache.
       apt:
@@ -10,4 +13,4 @@
 
   roles:
     - base
-
+    - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
