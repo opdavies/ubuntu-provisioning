@@ -8,11 +8,6 @@
         update_cache: yes
         cache_valid_time: 86400 
 
-  tasks:
-    - name: Install base packages
-      apt:
-        name: "{{ item }}"
-      with_items:
-        - git
-        - gitk
-        - vim
+  roles:
+    - base
+
