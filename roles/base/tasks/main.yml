@@ -1,0 +1,7 @@
+---
+- name: Install base packages
+  apt:
+    name: "{{ item }}"
+    state: installed
+  with_items: base_packages
+
