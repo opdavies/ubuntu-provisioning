@@ -28,5 +28,6 @@ ohmyzsh_plugins:
 
 vagrant_packages:
   - nfs-common
+  - nfs-kernel-server
   - virtualbox
   - vagrant
