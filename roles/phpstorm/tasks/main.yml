@@ -1,0 +1,7 @@
+---
+- name: Download PhpStorm.
+  unarchive:
+    src: "https://download.jetbrains.com/webide/PhpStorm-{{ phpstorm_version }}.tar.gz"
+    dest: "{{ phpstorm_destination }}"
+    copy: no
+  register: phpstorm_downloaded
