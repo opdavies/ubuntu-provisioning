@@ -19,12 +19,9 @@ ohmyzsh_aliases:
   - ohmyzsh="vim ~/.oh-my-zsh"
 ohmyzsh_plugins:
   - common-aliases
-  - composer
-  - gem
   - git
   - git-extras
   - git-flow
-  - git-remote-branch
   - sublime
   - ubuntu
   - vagrant
