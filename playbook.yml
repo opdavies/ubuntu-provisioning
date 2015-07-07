@@ -18,3 +18,4 @@
     - { role: opdavies.oh-my-zsh, tags: [ 'zsh', 'packages' ] }
     - { role: opdavies.sculpin, tags: [ 'sculpin', 'packages' ] }
     - { role: vagrant, tags: vagrant }
+    - { role: phpstorm, tags: phpstorm }
