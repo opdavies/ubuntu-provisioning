@@ -1,3 +1,4 @@
 geerlingguy.dotfiles
+geerlingguy.drush
 opdavies.oh-my-zsh
 opdavies.sculpin
