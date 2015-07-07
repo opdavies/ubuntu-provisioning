@@ -25,3 +25,8 @@ ohmyzsh_plugins:
   - sublime
   - ubuntu
   - vagrant
+
+vagrant_packages:
+  - nfs-common
+  - virtualbox
+  - vagrant
