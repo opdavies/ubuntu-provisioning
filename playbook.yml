@@ -16,3 +16,4 @@
     - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
     - { role: opdavies.oh-my-zsh, tags: [ 'zsh', 'packages' ] }
     - { role: opdavies.sculpin, tags: [ 'sculpin', 'packages' ] }
+    - { role: vagrant, tags: vagrant }
