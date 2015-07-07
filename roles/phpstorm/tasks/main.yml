@@ -5,3 +5,7 @@
     dest: "{{ phpstorm_destination }}"
     copy: no
   register: phpstorm_downloaded
+
+- name: Install Java JDK.
+  apt:
+    name: openjdk-7-jdk
