@@ -31,3 +31,5 @@ vagrant_packages:
   - nfs-kernel-server
   - virtualbox
   - vagrant
+
+phpstorm_version: 9.0
