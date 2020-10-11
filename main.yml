@@ -5,11 +5,25 @@
   vars_files:
     - config.yml
 
+  vars:
+    apt_packages:
+      - { name: fzf }
+      - { name: geary, state: absent }
+      - { name: gir1.2-appindicator3-0.1 } # Needed for screenkey
+      - { name: screenkey }
+
   pre_tasks:
     - name: Update apt cache.
       apt:
         update_cache: yes
         cache_valid_time: 86400 
+
+  tasks:
+    - name: Install and uninstall APT packages
+      apt:
+        name: "{{ item.name }}"
+        state: "{{ item.state|default('latest') }}"
+      with_items: "{{ apt_packages }}"
 
   roles:
     - { role: base, tags: [ 'base', 'packages' ] }
