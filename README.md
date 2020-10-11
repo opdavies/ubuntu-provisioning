@@ -4,7 +4,7 @@
 
 ## Running
 
-`$ ansible-playbook playbook.yml -K`
+`$ ansible-playbook main.yml -K`
 
 ## TODO
 
