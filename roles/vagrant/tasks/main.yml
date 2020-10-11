@@ -1,8 +1,0 @@
----
-- include: install-Debian.yml
-  when: ansible_os_family == 'Debian'
-
-- name: Install Vagrant.
-  apt:
-    name: "{{ item }}"
-  with_items: vagrant_packages

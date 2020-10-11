@@ -2,9 +2,6 @@
 - hosts: all
   become: true
 
-  vars_files:
-    - config.yml
-
   vars:
     apt_packages:
       - { name: fzf }
@@ -32,11 +29,3 @@
         name: "{{ item.name }}"
         state: "{{ item.state|default('present') }}"
       with_items: "{{ snap_packages }}"
-
-  roles:
-    - { role: base, tags: [ 'base', 'packages' ] }
-    - { role: geerlingguy.dotfiles, tags: [ 'dotfiles' ] }
-    - { role: geerlingguy.drush, tags: [ 'drush', 'drupal' ] }
-    - { role: opdavies.oh-my-zsh, tags: [ 'zsh', 'packages' ] }
-    - { role: opdavies.sculpin, tags: [ 'sculpin', 'packages' ] }
-    - { role: vagrant, tags: vagrant }
