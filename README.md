@@ -1,6 +1,6 @@
-# ubuntu-provisioning
+# Ubuntu Provisioning
 
-[Ansible](http://ansible.com/) playbooks for provisioning my Ubuntu laptop.
+[Ansible](http://ansible.com/) playbooks for provisioning Ubuntu and Pop!_OS mahcines.
 
 ## Running
 
