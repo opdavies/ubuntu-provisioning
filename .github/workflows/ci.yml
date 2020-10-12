@@ -1,0 +1,16 @@
+---
+name: CI
+
+on:
+  push:
+
+jobs:
+  ansible-lint:
+    name: Linting with Ansible Lint
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: ansible/ansible-lint-action@master
+        with:
+          targets: main.yml
