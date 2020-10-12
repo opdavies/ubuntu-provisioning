@@ -8,6 +8,8 @@
       - { name: geary, state: absent }
       - { name: gir1.2-appindicator3-0.1 } # Needed for screenkey
       - { name: screenkey }
+    pip_packages:
+      - { name: ansible-lint }
     snap_packages:
       - { name: doctl } # DigitalOcean CLI
 
@@ -29,3 +31,10 @@
         name: "{{ item.name }}"
         state: "{{ item.state|default('present') }}"
       with_items: "{{ snap_packages }}"
+
+    - name: Install and uninstall pip packages
+      pip:
+        name: "{{ item.name }}"
+        executable: pip3
+      with_items: "{{ pip_packages }}"
+      tags: [pip]
