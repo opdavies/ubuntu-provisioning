@@ -25,12 +25,14 @@
         name: "{{ item.name }}"
         state: "{{ item.state|default('latest') }}"
       with_items: "{{ apt_packages }}"
+      tags: [apt]
 
     - name: Install and uninstall snap packages
       snap:
         name: "{{ item.name }}"
         state: "{{ item.state|default('present') }}"
       with_items: "{{ snap_packages }}"
+      tags: [snap]
 
     - name: Install and uninstall pip packages
       pip:
