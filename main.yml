@@ -9,6 +9,7 @@
       - { name: gir1.2-appindicator3-0.1 } # Needed for screenkey
       - { name: htop }
       - { name: screenkey }
+      - { name: snapd }
     pip_packages:
       - { name: ansible-lint }
     snap_packages:
