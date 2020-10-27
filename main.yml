@@ -4,6 +4,8 @@
 
   vars:
     apt_packages:
+      - { name: docker.io }
+      - { name: docker-compose }
       - { name: fzf }
       - { name: geary, state: absent }
       - { name: gir1.2-appindicator3-0.1 } # Needed for screenkey
