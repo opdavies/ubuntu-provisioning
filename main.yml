@@ -13,6 +13,7 @@
       - { name: php }
       - { name: screenkey }
       - { name: snapd }
+      - { name: tmux }
     pip_packages:
       - { name: ansible-lint }
     snap_packages:
