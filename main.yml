@@ -11,6 +11,7 @@
         state: absent
       - name: gir1.2-appindicator3-0.1 # Needed for screenk
       - name: htop
+      - name: hub
       - name: php
       - name: screenkey
       - name: snapd
