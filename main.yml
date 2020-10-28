@@ -4,20 +4,21 @@
 
   vars:
     apt_packages:
-      - { name: docker.io }
-      - { name: docker-compose }
-      - { name: fzf }
-      - { name: geary, state: absent }
-      - { name: gir1.2-appindicator3-0.1 } # Needed for screenkey
-      - { name: htop }
-      - { name: php }
-      - { name: screenkey }
-      - { name: snapd }
-      - { name: tmux }
+      - name: docker.io
+      - name: docker-compose
+      - name: fzf
+      - name: geary
+        state: absent
+      - name: gir1.2-appindicator3-0.1 # Needed for screenk
+      - name: htop
+      - name: php
+      - name: screenkey
+      - name: snapd
+      - name: tmux
     pip_packages:
-      - { name: ansible-lint }
+      - name: ansible-lint
     snap_packages:
-      - { name: doctl } # DigitalOcean CLI
+      - name: doctl # DigitalOcean CLI
 
   pre_tasks:
     - name: Update apt cache.
