@@ -16,6 +16,7 @@
       - name: screenkey
       - name: snapd
       - name: tmux
+      - name: xclip
     pip_packages:
       - name: ansible-lint
     snap_packages:
