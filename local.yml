@@ -64,3 +64,10 @@
         state: present
         line: 'jarvis ALL=(ALL) NOPASSWD: /usr/local/bin/ansible-pull'
         validate: 'visudo -cf %s'
+
+    - name: Add cron task for Ansible Pull
+      cron:
+        name: Ansible auto-provision
+        user: jarvis
+        minute: '*/10'
+        job: ansible-pull --url https://github.com/opdavies/ubuntu-provisioning --only-if-changed
