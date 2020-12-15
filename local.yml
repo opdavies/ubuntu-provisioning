@@ -50,3 +50,17 @@
         executable: pip3
       with_items: "{{ pip_packages }}"
       tags: [pip]
+
+    - name: Add automation user
+      user:
+        name: jarvis
+        comment: User for running automation commands
+        system: yes
+        state: present
+
+    - name: Allow automation user to run ansible-pull
+      lineinfile:
+        path: /etc/sudoers
+        state: present
+        line: 'jarvis ALL=(ALL) NOPASSWD: /usr/local/bin/ansible-pull'
+        validate: 'visudo -cf %s'
