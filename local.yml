@@ -14,6 +14,7 @@
       - name: gnome-sushi
       - name: htop
       - name: hub
+      - name: pdf-presenter-console
       - name: php
       - name: screenkey
       - name: snapd
@@ -21,6 +22,7 @@
       - name: xclip
     pip_packages:
       - name: ansible-lint
+      - name: rst2pdf
     snap_packages:
       - name: doctl # DigitalOcean CLI
 
