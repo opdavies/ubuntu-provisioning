@@ -18,6 +18,7 @@
       - name: pdf-presenter-console
       - name: php
       - name: screenkey
+      - name: shutter
       - name: snapd
       - name: tmux
       - name: xclip
@@ -34,6 +35,11 @@
         cache_valid_time: 86400 
 
   tasks:
+    - name: Add the Shutter APT repository
+      apt_repository:
+        repo: ppa:linuxuprising/shutter
+      tags: [apt]
+
     - name: Install and uninstall APT packages
       apt:
         name: "{{ item.name }}"
