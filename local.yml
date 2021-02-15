@@ -16,6 +16,7 @@
       - name: hub
       - name: meld
       - name: pdf-presenter-console
+      - name: pdftk
       - name: php
       - name: screenkey
       - name: shutter
