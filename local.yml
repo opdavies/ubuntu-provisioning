@@ -27,7 +27,6 @@
       - name: rst2pdf
     snap_packages:
       - name: doctl # DigitalOcean CLI
-      - name: snap-store
       - name: spotify
       - name: todoist
 
