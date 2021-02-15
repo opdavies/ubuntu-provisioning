@@ -28,8 +28,6 @@
       - name: rst2pdf
     snap_packages:
       - name: doctl # DigitalOcean CLI
-      - name: spotify
-      - name: todoist
 
   pre_tasks:
     - name: Update apt cache.
