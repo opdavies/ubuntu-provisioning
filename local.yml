@@ -11,6 +11,7 @@
       - name: geary
         state: absent
       - name: gir1.2-appindicator3-0.1 # Needed for screenkey
+      - name: glances
       - name: gnome-sushi
       - name: htop
       - name: hub
