@@ -5,6 +5,8 @@
 
   vars:
     apt_packages:
+      - name: apache2
+        state: absent
       - name: docker.io
       - name: docker-compose
       - name: fzf
