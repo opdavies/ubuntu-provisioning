@@ -23,6 +23,7 @@
       - name: shutter
       - name: snapd
       - name: tmux
+      - name: wavemon
       - name: xclip
     pip_packages:
       - name: ansible-lint
