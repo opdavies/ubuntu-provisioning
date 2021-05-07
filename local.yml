@@ -7,6 +7,7 @@
     apt_packages:
       - name: apache2
         state: absent
+      - name: ctop
       - name: docker.io
       - name: docker-compose
       - name: fzf
