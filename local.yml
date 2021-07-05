@@ -23,6 +23,7 @@
       - name: pdf-presenter-console
       - name: pdftk
       - name: php
+      - name: python3-pip
       - name: screenkey
       - name: shutter
       - name: snapd
