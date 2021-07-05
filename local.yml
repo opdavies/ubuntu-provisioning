@@ -19,6 +19,7 @@
       - name: htop
       - name: hub
       - name: meld
+      - name: neovim
       - name: pdf-presenter-console
       - name: pdftk
       - name: php
