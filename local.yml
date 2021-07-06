@@ -16,14 +16,15 @@
       - name: gir1.2-appindicator3-0.1 # Needed for screenkey
       - name: glances
       - name: gnome-sushi
+      - name: gnome-tweak-tool
       - name: htop
-      - name: hub
       - name: meld
       - name: neovim
       - name: pdf-presenter-console
       - name: pdftk
       - name: php
       - name: python3-pip
+      - name: pv
       - name: screenkey
       - name: shutter
       - name: snapd
