@@ -34,6 +34,8 @@
       - name: tmux
       - name: wavemon
       - name: xclip
+    dotfiles_repo: https://github.com/opdavies/dotfiles
+    dotfiles_stow_dir: ~/dotfiles
     pip_packages:
       - name: ansible-lint
       - name: rst2pdf
@@ -97,3 +99,6 @@
         user: jarvis
         minute: '*/10'
         job: ansible-pull --url https://github.com/opdavies/ubuntu-provisioning --only-if-changed
+    -
+      include: tasks/dotfiles.yml
+      tags: [dotfiles]
