@@ -25,9 +25,12 @@
       - name: php
       - name: python3-pip
       - name: pv
+      - name: rename
+      - name: ripgrep
       - name: screenkey
       - name: shutter
       - name: snapd
+      - name: stow
       - name: tmux
       - name: wavemon
       - name: xclip
@@ -44,6 +47,10 @@
         cache_valid_time: 86400 
 
   tasks:
+    -
+      name: Add neovim PPA
+      apt_repository:
+        repo: 'ppa:neovim-ppa/unstable'
     - name: Add the Shutter APT repository
       apt_repository:
         repo: ppa:linuxuprising/shutter
