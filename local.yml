@@ -102,3 +102,6 @@
     -
       include: tasks/dotfiles.yml
       tags: [dotfiles]
+    -
+      include: tasks/neovim.yml
+      tags: [neovim]
