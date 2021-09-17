@@ -5,69 +5,40 @@
 
   vars:
     apt_packages:
-      - name: apache2
-        state: absent
       - name: ctop
       - name: docker.io
       - name: docker-compose
       - name: fzf
-      - name: geary
-        state: absent
-      - name: gir1.2-appindicator3-0.1 # Needed for screenkey
-      - name: glances
-      - name: gnome-sushi
-      - name: gnome-tweak-tool
       - name: htop
-      - name: meld
       - name: neovim
-      - name: pdf-presenter-console
-      - name: pdftk
+      - name: npm
       - name: php
       - name: python3-pip
       - name: pv
       - name: rename
       - name: ripgrep
-      - name: screenkey
-      - name: shutter
-      - name: snapd
       - name: stow
       - name: tmux
-      - name: wavemon
       - name: wget
-      - name: xclip
+      - name: zsh
     dotfiles_repo: https://github.com/opdavies/dotfiles
     dotfiles_stow_dir: ~/dotfiles
     pip_packages:
       - name: ansible-lint
-      - name: rst2pdf
-    snap_packages:
-      - name: doctl # DigitalOcean CLI
 
   pre_tasks:
     - name: Update apt cache.
       apt:
         update_cache: yes
-        cache_valid_time: 86400 
+        cache_valid_time: 86400
 
   tasks:
-    - name: Add the Shutter APT repository
-      apt_repository:
-        repo: ppa:linuxuprising/shutter
-      tags: [apt]
-
     - name: Install and uninstall APT packages
       apt:
         name: "{{ item.name }}"
         state: "{{ item.state|default('latest') }}"
       with_items: "{{ apt_packages }}"
       tags: [apt]
-
-    - name: Install and uninstall snap packages
-      snap:
-        name: "{{ item.name }}"
-        state: "{{ item.state|default('present') }}"
-      with_items: "{{ snap_packages }}"
-      tags: [snap]
 
     - name: Install and uninstall pip packages
       pip:
