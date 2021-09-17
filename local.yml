@@ -6,6 +6,7 @@
   vars:
     apt_packages:
       - name: ctop
+      - name: curl
       - name: docker.io
       - name: docker-compose
       - name: fzf
