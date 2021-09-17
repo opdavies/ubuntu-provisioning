@@ -33,6 +33,7 @@
       - name: stow
       - name: tmux
       - name: wavemon
+      - name: wget
       - name: xclip
     dotfiles_repo: https://github.com/opdavies/dotfiles
     dotfiles_stow_dir: ~/dotfiles
