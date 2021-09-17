@@ -53,11 +53,11 @@
       include: tasks/zsh.yml
       tags: [zsh]
     -
+      include: tasks/neovim.yml
+      tags: [neovim]
+    -
       include: tasks/dotfiles.yml
       tags: [dotfiles]
     -
       include: tasks/npm.yml
       tags: [npm]
-    -
-      include: tasks/neovim.yml
-      tags: [neovim]
