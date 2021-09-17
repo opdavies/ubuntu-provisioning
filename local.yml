@@ -49,10 +49,6 @@
         cache_valid_time: 86400 
 
   tasks:
-    -
-      name: Add neovim PPA
-      apt_repository:
-        repo: 'ppa:neovim-ppa/unstable'
     - name: Add the Shutter APT repository
       apt_repository:
         repo: ppa:linuxuprising/shutter
