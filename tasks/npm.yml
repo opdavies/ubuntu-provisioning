@@ -1,0 +1,4 @@
+---
+-
+  name: Install global npm packages
+  shell: npm install -g @angular/language-server intelephense typescript-language-server typescript vls
