@@ -11,6 +11,7 @@
       - name: docker-compose
       - name: fzf
       - name: htop
+      - name: nnn
       - name: npm
       - name: php
       - name: python3-pip
