@@ -57,7 +57,9 @@
     -
       include_role:
         name: neovim
-      tags: [nvim, neovim]
+        apply:
+          tags: [nvim, neovim]
+      tags: [always]
     -
       include: tasks/npm.yml
       tags: [npm]
