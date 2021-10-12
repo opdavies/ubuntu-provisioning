@@ -3,4 +3,6 @@
   shell: chsh -s $(which zsh)
 
 - name: Download antigen
-  shell: wget -q -O ~/.antigen.zsh https://raw.githubusercontent.com/zsh-users/antigen/master/bin/antigen.zsh
+  get_url:
+    dest: ~/.antigen.zsh
+    url: https://raw.githubusercontent.com/zsh-users/antigen/master/bin/antigen.zsh
