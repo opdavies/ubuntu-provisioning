@@ -1,12 +1,11 @@
 ---
--
-  name: Clone dotfiles
+- name: Clone dotfiles
   git:
     repo: "{{ dotfiles_repo }}"
     dest: "{{ dotfiles_stow_dir }}"
     update: true
--
-  name: stow dotfiles
+
+- name: stow dotfiles
   shell: stow alacritty bin composer dconf git nvim tmux zsh
   args:
     chdir: "{{ dotfiles_stow_dir }}"

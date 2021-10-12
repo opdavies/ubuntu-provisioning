@@ -28,39 +28,37 @@
       - name: ansible-lint
 
   pre_tasks:
-    -
-      name: Update apt cache.
+    - name: Update apt cache.
       apt:
         update_cache: yes
         cache_valid_time: 86400
 
   tasks:
-    -
-      name: Install and uninstall APT packages
+    - name: Install and uninstall APT packages
       apt:
         name: "{{ item.name }}"
         state: "{{ item.state|default('latest') }}"
       with_items: "{{ apt_packages }}"
       tags: [apt]
-    -
-      name: Install and uninstall pip packages
+
+    - name: Install and uninstall pip packages
       pip:
         name: "{{ item.name }}"
         executable: pip3
       with_items: "{{ pip_packages }}"
       tags: [pip]
-    -
-      include: tasks/zsh.yml
+
+    - include: tasks/zsh.yml
       tags: [zsh]
-    -
-      include: tasks/dotfiles.yml
+
+    - include: tasks/dotfiles.yml
       tags: [dotfiles]
-    -
-      include_role:
+
+    - include_role:
         name: neovim
         apply:
           tags: [nvim, neovim]
       tags: [always]
-    -
-      include: tasks/npm.yml
+
+    - include: tasks/npm.yml
       tags: [npm]
