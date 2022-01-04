@@ -1,3 +1,4 @@
 ---
 - name: Install global npm packages
-  shell: npm install -g @angular/language-server @tailwindcss/language-server ansible-language-server intelephense typescript-language-server typescript vls vscode-langservers-extracted
+  shell: >
+    npm install -g @angular/language-server @tailwindcss/language-server ansible-language-server bash-language-server intelephense typescript-language-server typescript vls vscode-langservers-extracted yaml-language-server
